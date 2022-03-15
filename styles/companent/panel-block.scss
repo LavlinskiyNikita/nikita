@@ -1,0 +1,30 @@
+.panel-block {
+  display: flex;
+  flex-direction: column;
+
+  border-right: 1px solid #BCBCBC;
+  width: 289px;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
+  position: fixed;
+  top: 0; bottom: 0;
+  left: 0;
+}
+.panel-block_container {
+  padding-top: 120px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.panel-block_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-block_logo {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-bottom: 82px;
+}
