@@ -28,3 +28,19 @@
   flex-shrink: 0;
   margin-bottom: 82px;
 }
+
+.panel-block__footer {
+  display: block;
+  padding-top: 83px;
+}
+
+.panel-block__email-text {
+  font-family: 'Solway', serif;
+  font-weight: 400;
+  padding-bottom: 54px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #000000;
+}
