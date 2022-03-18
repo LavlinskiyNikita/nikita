@@ -9,4 +9,16 @@
   line-height: 22px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+
+  a {
+    font-family: 'Solway', serif;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: overline;
+      color: #202020;
+    }
+  }
 }

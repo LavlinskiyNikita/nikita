@@ -17,11 +17,11 @@ export default function AsideBar() {
 
             <nav className="panel-nav">
               <ul className="panel-nav__menu">
-                <li className="panel-nav__item">portfolio</li>
-                <li className="panel-nav__item">profile</li>
-                <li className="panel-nav__item">blog</li>
-                <li className="panel-nav__item">contacts</li>
-                <li className="panel-nav__item">admin</li>
+                <li className="panel-nav__item"> <Link href="/"><a>portfolio</a></Link></li>
+                <li className="panel-nav__item"> <Link href="/profile"><a>profile</a></Link></li>
+                <li className="panel-nav__item"> <Link href="/blog"><a>blog</a></Link></li>
+                <li className="panel-nav__item"> <Link href="/contact"><a>contacts</a></Link></li>
+                <li className="panel-nav__item"> <Link href="/admin"><a>admin</a></Link></li>
               </ul>
             </nav>
 

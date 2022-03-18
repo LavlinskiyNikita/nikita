@@ -1,8 +1,4 @@
-@import './companent/main.scss';
-@import './companent/panel-block.scss';
-@import './companent/panel-nav.scss';
-@import './companent/panel-link.scss';
-@import './companent/cardProject.scss';
+@import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
 
 body {
   margin: 0;
@@ -14,3 +10,10 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+@import './companent/main.scss';
+@import './companent/panel-block.scss';
+@import './companent/panel-nav.scss';
+@import './companent/panel-link.scss';
+@import './companent/cardProject.scss';
+@import './companent/page-post.scss';
