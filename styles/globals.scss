@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
   margin: 0;
@@ -17,3 +18,5 @@ ul {
 @import './companent/panel-link.scss';
 @import './companent/cardProject.scss';
 @import './companent/page-post.scss';
+@import './companent/card.scss';
+@import './companent/profile/profile.scss';

@@ -1,0 +1,29 @@
+.skill-user__title {
+  margin-bottom: 50px;
+  font-family: 'Varela Round', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #A9A9A9;
+}
+
+.skill-user__list {
+  font-family: 'Solway', serif;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-user__item {
+  font-family: 'Solway', serif;
+  font-size: 24px;
+  margin-bottom: 11px;
+  margin-right: 20px;
+}
+
+.skill-user__skills {
+  padding: 10px;
+}

@@ -19,6 +19,12 @@ export async function getStaticProps(context) {
 export default function Home({ contents }) {
   return (
     <>
+      <Head>
+        <title>
+          post main page |  NIKITA.com
+        </title>
+      </Head>
+
     <div className="cardBlock">
         {contents && contents.map(({ id, title, url }) => (
           <CardProject key={id} id={id} title={title} descr={title} image={url}/>

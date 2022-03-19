@@ -1,7 +1,69 @@
-export default function Profile() {
+export async function getStaticProps(context) {
+  const response = await fetch(`${process.env.API__HOST}/profileBD`);
+  const data = await response.json();
+
+  if ( !data ) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return {
+    props: {user: data}, 
+  }
+}
+
+export default function Profile({ user }) {
+  const {surname, name, patronymic, photo, sex, years, experience, city, skill, information, studying, Queue } = user || {};
+
+
   return (
     <>
-      профиль
+      <div className="Profile">
+
+        <section className="profile-section-block informationUser">
+          <div className="informationUser__info-block">
+            <h1 className="informationUser__name">{`${surname} ${name} ${patronymic}`}</h1>
+            <p className="informationUser__sex-dat">{`${sex}, ${years}`}</p>
+            <p className="informationUser__city">{`город: ${city}`}</p>
+          </div>
+          <div className="userPhoto informationUser__photo">
+            <img width={333} height={333} src={photo} alt="photo user" />
+          </div>
+        </section>
+
+        <section className="profile-section-block  work-user">
+          <h1 className="work-user__experience">опыта работы</h1>
+          <p className="work-user__derection">{`${experience}`}</p>
+        </section>
+
+        <section className="profile-section-block skill-user">
+          <h1 className="skill-user__title">навыки:</h1>
+          <ul className="skill-user__list">
+            <li className="skill-user__item skill-user__skills">{`${skill}`}</li>
+          </ul>
+        </section>
+
+        <section className="profile-section-block">
+          <h1 className="skill-user__title">другая информация</h1>
+          <p className="skill-user__item">{`${information}`}</p>
+        </section>
+
+        <section className="profile-section-block ">
+          <h1 className="skill-user__title">изучаю</h1>
+          <ul className="skill-user__list">
+            <li className="skill-user__item">{`${studying}`}</li>
+          </ul>
+        </section>
+
+        <section className="profile-section-block">
+          <h1 className="skill-user__title">В очереди на изучение:</h1>
+          <ul className="skill-user__list">
+            <li className="skill-user__item">{`${Queue}`}</li>
+          </ul>
+        </section>
+
+      </div>
     </>
   )
 }

@@ -1,0 +1,40 @@
+.informationUser {
+  display: flex;
+  justify-content: space-between;
+}
+
+.informationUser__name {
+  width: 500px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.informationUser__sex-dat {
+  font-family: 'Varela Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.09em;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.informationUser__city {
+  font-family: 'Varela Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  /* identical to box height */
+  
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  
+  color: #000000;
+}

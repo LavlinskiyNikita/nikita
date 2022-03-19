@@ -1,0 +1,22 @@
+.card {
+  font-family: 'Roboto', serif;
+}
+
+.card__title {
+  font-family: 'Roboto', serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card__descr {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.card__link {
+  a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: black;
+  }
+}

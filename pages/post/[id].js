@@ -12,7 +12,7 @@ export async function getServerSideProps(context) {
   }
 
   return {
-    props: {content: data}, // will be passed to the page component as props
+    props: {content: data},
   }
 }
 
