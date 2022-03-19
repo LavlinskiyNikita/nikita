@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
-function CardProject({ id, title, descr, image}) {
+
+const CardProject = ({ id, title, descr, image }) => {
   return (
     <>
       <div className="card">
@@ -15,4 +16,4 @@ function CardProject({ id, title, descr, image}) {
   )
 }
 
-export default CardProject();
+export default CardProject
