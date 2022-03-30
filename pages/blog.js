@@ -1,7 +1,44 @@
-export default function BLog() {
+import PostBlog from "../component/post/post_blog"
+
+export async function getStaticProps() {
+  const res = await fetch(`${process.env.API__HOST}/post`);
+  const post = await res.json();
+
+  return {
+    props: {
+      post,
+    },
+  }
+}
+
+
+export default function BLog({ post }) {
   return (
     <>
-      блог
+      <div className="blog-content">
+        <div className="blog-content__post">
+          {post.map(({ title, descr, photo }) => (
+            <PostBlog
+            title={title}
+            descr={descr}
+            photo={photo}
+          />
+          ))}
+        </div>
+        <div className="blog-conent__links">
+          <aside className="sidebar__menu">
+            <h1 className="sidebar__menuTitle">categories </h1>
+            <nav className="menuNav">
+              <ul className="menuList">
+                <li className="mtnuItem"><a href="" className="sidBarMenuLink">link 1</a></li>
+                <li className="mtnuItem"><a href="" className="sidBarMenuLink">link 2</a></li>
+                <li className="mtnuItem"><a href="" className="sidBarMenuLink">link 2</a></li>
+                <li className="mtnuItem"><a href="" className="sidBarMenuLink">link 4</a></li>
+              </ul> 
+            </nav> 
+          </aside> 
+        </div>
+      </div> 
     </>
   )
 }

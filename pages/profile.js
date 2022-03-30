@@ -1,16 +1,18 @@
 export async function getStaticProps(context) {
-  const response = await fetch(`${process.env.API__HOST}/profileBD`);
-  const data = await response.json();
+  try {
+    const response = await fetch(`${process.env.API__HOST}/profileBD`);
+    const data = await response.json();
 
-  if ( !data ) {
-    return {
-      notFound: true,
+    if ( !data ) {
+      return {
+        notFound: true,
+      }
     }
-  }
 
-  return {
-    props: {user: data}, 
-  }
+    return {
+      props: {user: data}, 
+    }
+  } catch {}
 }
 
 export default function Profile({ user }) {

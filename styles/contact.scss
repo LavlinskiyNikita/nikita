@@ -1,0 +1,164 @@
+.titleContact {
+  margin-bottom: 70px;
+
+  text-align: center;
+
+  font-family: Varela Round;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 58px;
+
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  
+  color: #000000;
+  
+}
+
+.linksSEction {
+  display: flex;
+  margin-bottom: 140px;
+
+  .SectionLink {
+    margin-right: 120px;
+    .titleContact {
+      font-family: 'Varela Round', sans-serif;
+      text-align: center;
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+  
+    .sectionTitle {
+      font-family: 'Varela Round', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 31px;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 16px;
+    }
+  
+    .FollowFieldset {
+      border: 0;
+  
+      .ulSectionLink {
+        
+  
+        .LiSectionLink {
+          margin-bottom: 16px;
+  
+          a {
+            font-family: 'Varela Round', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            text-decoration: none;
+            
+            color: #858585;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }  
+      }
+    }
+  }
+}
+
+.contactForm {
+  width: 100%;
+  padding-bottom: 300px;
+
+  .TitleForm {
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 25px;
+  }
+
+    .inputForm {
+      padding-left: 54px;
+      width: 100%;
+      height: 85px;
+      border: 0;
+      margin-bottom: 36px;
+
+      font-family: Varela Round;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;    
+      text-transform: uppercase;
+      
+      color: #000000;
+
+      &::placeholder {
+        font-family: Varela Round;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 29px;     
+        text-transform: uppercase;
+        
+        color: #000000;
+      }
+    }
+  
+    textarea {
+      border: 0;
+      resize: none;
+      width: 100%;
+      height: 662px;
+      padding-top: 28px;
+      padding-left: 54px;
+      margin-bottom: 75px;
+
+      font-family: Varela Round;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+      text-transform: uppercase;
+      
+      color: #000000;
+
+      &::placeholder {
+        font-family: Varela Round;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 29px;
+        text-transform: uppercase;
+        
+        color: #000000;
+      }
+    }
+  
+    .btnSubmit {
+      padding: 20px 90px;
+      background: #000000;
+      border: 0;
+      color: rgb(255, 255, 255);
+  
+      font-family: 'Varela Round', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 58px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+  
+      cursor: pointer;
+    }
+}

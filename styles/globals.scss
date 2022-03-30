@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 body {
   margin: 0;
@@ -12,6 +13,7 @@ ul {
   list-style: none;
 }
 
+@import './contact.scss';
 @import './companent/main.scss';
 @import './companent/panel-block.scss';
 @import './companent/panel-nav.scss';
@@ -20,3 +22,6 @@ ul {
 @import './companent/page-post.scss';
 @import './companent/card.scss';
 @import './companent/profile/profile.scss';
+@import './companent/blog/blog-content.scss';
+@import './companent/blog/post.scss';
+@import './companent/admin/admin_main.scss';

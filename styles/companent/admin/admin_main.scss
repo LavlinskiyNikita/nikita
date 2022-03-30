@@ -1,0 +1,93 @@
+.blogForm {
+  width: 305px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  .FormImageBlock {
+    animation: 4s linear 0s normal none infinite running rotuteImage;
+
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .TitleLogin {
+    text-align: center;
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 47px;
+  }
+
+  .inputLogIn {
+    cursor: pointer;
+
+    border: 0;
+    width: 100%;
+    height: 48px;
+    font-family: Solway;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #000000;
+
+    margin-bottom: 40px;
+
+    &::placeholder {
+      padding-left: 10px;
+      font-family: Solway;
+      font-size: 12px;
+      line-height: 17px;
+
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      
+      color: #A4A4A4;
+    }
+
+    &:focus {
+      border: 0 ;
+      outline: 1px #000000;
+    }
+  }
+
+  .BtnSubmitLogIn {
+    cursor: pointer;
+
+    background: #000000;
+
+    color: #FFFFFF;
+    width: 100%;
+    height: 69px;
+
+    font-family: Varela Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    border: 0;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background: #111111;
+      box-shadow: inset #222222;
+      border-radius: 12px;
+    }
+  }
+}
+
+@keyframes rotuteImage {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+   transform: rotate(360deg);
+  }
+}

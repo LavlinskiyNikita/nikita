@@ -1,0 +1,65 @@
+.post {
+  margin-bottom: 200px;
+}
+
+.img {
+  width: 100%;
+
+}
+
+.title__post {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 33px;
+  margin-bottom: 32px;
+}
+
+.descr__descr {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #707070;
+  margin-bottom: 22px;
+}
+
+
+
+
+.sidebar__menu {
+  position: fixed;
+  right: 130px;
+  
+}
+
+.sidebar__menuTitle {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 23px;
+}
+
+
+.menuList {
+
+  .mtnuItem {
+    margin-bottom: 23px;
+    padding-left: 30px;
+
+    .sidBarMenuLink {
+      font-family: 'Varela Round', sans-serif;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #868686;
+    }
+  }
+}
