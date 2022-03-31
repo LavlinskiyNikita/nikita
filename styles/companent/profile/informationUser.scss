@@ -3,6 +3,12 @@
   justify-content: space-between;
 }
 
+.userPhoto {
+  img {
+    width: 333px;
+  }
+}
+
 .informationUser__name {
   width: 500px;
   font-family: 'Varela Round', sans-serif;
@@ -37,4 +43,37 @@
   text-transform: uppercase;
   
   color: #000000;
+}
+
+@media (max-width: 1000px) {
+  .informationUser {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .informationUser__name {
+    width: 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    line-height: 43px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 25px;
+  }
+
+  .informationUser__sex-dat,
+  .informationUser__city {
+    font-size: 16px;
+  }
+
+  .userPhoto {
+    display: flex;
+    order: -1;
+
+    img {
+      width: 50%;
+    }
+  }
 }

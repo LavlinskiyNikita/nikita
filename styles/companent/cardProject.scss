@@ -55,3 +55,20 @@
   line-height: 16px;
   color: #000000;
 }
+
+@media (max-width: 1000px) {
+  .card {
+    margin-right: 0;
+    margin-bottom: 155px;
+    position: relative;
+    width: 300px;
+    min-height: 418px;
+    background: #F7F7F7;
+    transition: transform .7s;
+  
+    &:hover {
+      transform: translateY(0);
+      box-shadow: 0 0 20px #00000069;
+    }
+  }
+}

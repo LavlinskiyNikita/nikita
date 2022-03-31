@@ -11,3 +11,14 @@
   padding-left: 140px;
   padding-right: 140px;
 }
+
+@media (max-width:1000px) {
+  .main {
+    max-width: 100%;
+    padding: 0 41px;
+  }
+  
+  .main__container {
+    padding: 0;
+  }
+} 

@@ -1,8 +1,11 @@
 import Link from 'next/link'
 
+import HumburgerItem from './humburgerItem'
+
 export default function AsideBar() {
   return (
     <>
+
     <div className="panel-block">
         <div className="panel-block_container">
           <div className="panel-block_content">
@@ -13,6 +16,12 @@ export default function AsideBar() {
                   <img src="/nikita.svg" alt="logo" />
                 </a>
               </Link>
+
+              <button className="header__humburger">
+                <span className="header__humburger-line"></span>
+                <span className="header__humburger-line"></span>
+                <span className="header__humburger-line"></span>
+              </button>
             </div>
 
             <nav className="panel-nav">

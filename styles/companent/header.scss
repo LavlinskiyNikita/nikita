@@ -1,0 +1,41 @@
+.header {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+
+  .header__humburger {
+    width: 31px; 
+    height: 23px;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+  }
+
+  .header__humburger-line {
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    height: 2px;
+
+    &:nth-child(1) {
+      top: 0;
+      right: 0;
+      width: 100%;
+    }
+
+    &:nth-child(2) {
+      width: 100%;
+      top: auto;
+      bottom: auto;
+      right: 0;
+    }
+
+    &:nth-child(3) {
+      bottom: 0;
+      right: 0;
+      width: 50%;
+    }
+  }
+}

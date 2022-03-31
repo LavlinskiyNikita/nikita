@@ -9,8 +9,7 @@ export default function handler(req, res) {
       years: '28 апреля 2005',
       experience: 'нету',
       city: 'воронеж',
-      skill: ["JavaScript", 
-              "html5", "css3", "scss", "less", "верстка", "frontend", "adobe-photoshop", "adobe-Experience Design", "figma", "git", "gulp", "next.js", "react.js"],
+      skill: ["JavaScript","html5", "css3", "scss", "less", "верстка", "frontend", "adobe-photoshop", "adobe-Experience Design", "figma", "git", "gulp", "next.js", "react.js"],
       information: 'обмновляю портфолио и ризюме периодический сумму. Зп обговариваю лично ',
       studying: ["react"],
       Queue: ["node js"]

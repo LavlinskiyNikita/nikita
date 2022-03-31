@@ -1,3 +1,5 @@
+import { HtmlContext } from "next/dist/shared/lib/utils";
+
 export async function getStaticProps(context) {
   try {
     const response = await fetch(`${process.env.API__HOST}/profileBD`);
@@ -18,6 +20,9 @@ export async function getStaticProps(context) {
 export default function Profile({ user }) {
   const {surname, name, patronymic, photo, sex, years, experience, city, skill, information, studying, Queue } = user || {};
 
+  // skill.forEach(element => {
+  //   <li className="skill-user__item skill-user__skills">{`${element}`}</li>
+  // });
 
   return (
     <>
@@ -30,7 +35,7 @@ export default function Profile({ user }) {
             <p className="informationUser__city">{`город: ${city}`}</p>
           </div>
           <div className="userPhoto informationUser__photo">
-            <img width={333} height={333} src={photo} alt="photo user" />
+            <img src={photo} alt="photo user" />
           </div>
         </section>
 
@@ -41,8 +46,10 @@ export default function Profile({ user }) {
 
         <section className="profile-section-block skill-user">
           <h1 className="skill-user__title">навыки:</h1>
-          <ul className="skill-user__list">
-            <li className="skill-user__item skill-user__skills">{`${skill}`}</li>
+          <ul className="skill-user__list">            
+            <li className="skill-user__item skill-user__skills">
+              <li className="skill-user__item skill-user__skills">{skill.join(' ')}</li>
+            </li>
           </ul>
         </section>
 
@@ -54,14 +61,14 @@ export default function Profile({ user }) {
         <section className="profile-section-block ">
           <h1 className="skill-user__title">изучаю</h1>
           <ul className="skill-user__list">
-            <li className="skill-user__item">{`${studying}`}</li>
+            <li className="skill-user__item">{`${studying.join(' ')}`}</li>
           </ul>
         </section>
 
         <section className="profile-section-block">
           <h1 className="skill-user__title">В очереди на изучение:</h1>
           <ul className="skill-user__list">
-            <li className="skill-user__item">{`${Queue}`}</li>
+            <li className="skill-user__item">{`${Queue.join(' ')}`}</li>
           </ul>
         </section>
 

@@ -63,3 +63,9 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .sidebar__menu {
+    display: none;
+  }
+}
