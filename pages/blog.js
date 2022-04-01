@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import PostBlog from "../component/post/post_blog"
 
 export async function getStaticProps() {
@@ -15,10 +17,14 @@ export async function getStaticProps() {
 export default function BLog({ post }) {
   return (
     <>
+      <Head>
+        <title>blog post |  NIKITA.com</title>
+      </Head>
       <div className="blog-content">
         <div className="blog-content__post">
-          {post.map(({ title, descr, photo }) => (
-            <PostBlog
+          {post.map(({ id , title, descr, photo }) => (
+          <PostBlog
+            key={id}
             title={title}
             descr={descr}
             photo={photo}

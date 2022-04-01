@@ -1,6 +1,15 @@
+import Head from 'next/head'
+import Image from 'next/image'
+Head
+
 export default function Admin() {
   return (
     <>
+      <Head>
+        <title>
+          admin |  NIKITA.com
+        </title>
+      </Head>
       <div className="blogForm">
           <div className="FormImageBlock">
             <img className="FormImage" src="/admin__icon.svg" alt="img-login" />

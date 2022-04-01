@@ -1,11 +1,13 @@
+import Image from 'next/image'
+
 
 const postBlog = ({ title, descr, photo }) =>{
   return (
     <>
       <div className="post">
         <div className="img__post">
-
-          <img className="img" src={`${photo}`} alt="" />
+          
+          <img className="img" src={`${photo}`} alt={`${title}`} />
         </div>
               
 

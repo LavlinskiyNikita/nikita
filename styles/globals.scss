@@ -15,6 +15,37 @@ ul {
   list-style: none;
 }
 
+
+.error {
+  width: 100%;
+}
+
+
+.error__text {
+  font-family: 'Solway';
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 100px;
+}
+
+@media (max-width: 1000px) {
+  .error {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 20vh);
+  }
+
+  .error__text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Solway';
+    font-size: 50px;
+  }
+}
+
 @import './contact.scss';
 @import './companent/main.scss';
 @import './companent/panel-block.scss';

@@ -1,4 +1,5 @@
 import { HtmlContext } from "next/dist/shared/lib/utils";
+import Head from 'next/head'
 
 export async function getStaticProps(context) {
   try {
@@ -26,8 +27,12 @@ export default function Profile({ user }) {
 
   return (
     <>
-      <div className="Profile">
+      <Head>
+        <title> profile|  NIKITA.com</title>
+      </Head>
 
+    
+      <div className="Profile">
         <section className="profile-section-block informationUser">
           <div className="informationUser__info-block">
             <h1 className="informationUser__name">{`${surname} ${name} ${patronymic}`}</h1>
