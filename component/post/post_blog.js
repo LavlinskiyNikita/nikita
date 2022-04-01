@@ -5,7 +5,7 @@ const postBlog = ({ title, descr, photo }) =>{
       <div className="post">
         <div className="img__post">
 
-          <img className="img" width={886} src={`${photo}`} alt="" />
+          <img className="img" src={`${photo}`} alt="" />
         </div>
               
 

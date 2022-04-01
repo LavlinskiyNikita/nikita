@@ -67,3 +67,5 @@ RandomAPI(title, description, pictures);
 
 
 console.log(RandomAPI);
+
+console.log(window.innerWidth)

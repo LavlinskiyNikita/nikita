@@ -31,6 +31,7 @@
 
 .sidebar__menu {
   position: fixed;
+  display: none;
   right: 130px;
   
 }
@@ -67,5 +68,21 @@
 @media (max-width: 1000px) {
   .sidebar__menu {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .post {
+    margin-bottom: 50px;
+  }
+
+  .title__post {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .descr__descr {
+    font-size: 12px;
   }
 }

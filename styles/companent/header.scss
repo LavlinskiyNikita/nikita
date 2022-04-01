@@ -2,6 +2,10 @@
   display: none;
 }
 
+.header__humburger--active {
+  display: none;
+}
+
 @media (max-width: 1000px) {
 
   .header__humburger {
@@ -36,6 +40,44 @@
       bottom: 0;
       right: 0;
       width: 50%;
+    }
+  }
+
+  .header__humburger--active {
+    display: block;
+    width: 31px; 
+    height: 23px;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+
+    .header__humburger-line {
+      position: absolute;
+      background: black;
+      border-radius: 50%;
+      height: 2px;
+  
+      &:nth-child(1) {
+        transition: all 0.3s ease-in-out;
+        top: 50%;
+        right: 0;
+        transform: rotate(46deg);
+      }
+  
+      &:nth-child(2) {
+        transition: all 0.3s ease-in-out;
+        top: 50%;
+        right: 0;
+        transform: rotate(-46deg);
+      }
+  
+      &:nth-child(3) {
+        transition: all 0.3s ease-in-out;
+        bottom: 0;
+        right: 0;
+        width: 0%;
+      }
     }
   }
 }

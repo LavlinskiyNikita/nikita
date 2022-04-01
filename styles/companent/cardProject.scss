@@ -72,3 +72,14 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .card {
+    margin-bottom: 155px;
+    position: relative;
+    width: 100%;
+    min-height: 418px;
+    background: #F7F7F7;
+    transition: transform .7s;
+  }
+}

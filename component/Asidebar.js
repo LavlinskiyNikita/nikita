@@ -1,11 +1,22 @@
 import Link from 'next/link'
+import React, { useState, useEffect } from 'react';
+import Menu from './menu'
 
-import HumburgerItem from './humburgerItem'
 
 export default function AsideBar() {
+  const [clickMenu, setClickMenu] = React.useState(false)
+
+  useEffect (() => {
+    const widthWin = window.innerWidth;
+
+    if (widthWin <= 1000) {
+    } else {
+      setClickMenu(true)
+    }
+  });
+
   return (
     <>
-
     <div className="panel-block">
         <div className="panel-block_container">
           <div className="panel-block_content">
@@ -17,22 +28,15 @@ export default function AsideBar() {
                 </a>
               </Link>
 
-              <button className="header__humburger">
+              <button className={`header__humburger${!clickMenu ? "" : '--active'}`} onClick={() => setClickMenu(!clickMenu)}>
                 <span className="header__humburger-line"></span>
                 <span className="header__humburger-line"></span>
                 <span className="header__humburger-line"></span>
               </button>
             </div>
 
-            <nav className="panel-nav">
-              <ul className="panel-nav__menu">
-                <li className="panel-nav__item"> <Link href="/"><a>portfolio</a></Link></li>
-                <li className="panel-nav__item"> <Link href="/profile"><a>profile</a></Link></li>
-                <li className="panel-nav__item"> <Link href="/blog"><a>blog</a></Link></li>
-                <li className="panel-nav__item"> <Link href="/contact"><a>contacts</a></Link></li>
-                <li className="panel-nav__item"> <Link href="/admin"><a>admin</a></Link></li>
-              </ul>
-            </nav>
+            {clickMenu ? <Menu></Menu> : null}
+            
 
             <div className="panel-link">
               <div className="panel-link__item"> <a href="http://">instagram</a></div>

@@ -77,3 +77,14 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .userPhoto {
+    display: flex;
+    order: -1;
+
+    img {
+      width: 100%;
+    }
+  }
+}

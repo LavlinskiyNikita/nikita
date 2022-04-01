@@ -6,3 +6,9 @@
 .blog-content__post {
   max-width: 886px;
 }
+
+@media (max-width: 500px) {
+  .blog-content__post {
+    max-width: 100%;
+  }
+}
