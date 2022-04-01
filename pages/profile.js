@@ -1,21 +1,18 @@
-import { HtmlContext } from "next/dist/shared/lib/utils";
 import Head from 'next/head'
 
-export async function getStaticProps(context) {
-  try {
-    const response = await fetch(`${process.env.API__HOST}/profileBD`);
-    const data = await response.json();
+export async function getServerSideProps(context) {
+  const response = await fetch(`${process.env.API__HOST}/profileBD`);
+  const data = await response.json();
 
-    if ( !data ) {
-      return {
-        notFound: true,
-      }
-    }
-
+  if ( !data ) {
     return {
-      props: {user: data}, 
+      notFound: true,
     }
-  } catch {}
+  }
+
+  return {
+    props: {user: data}
+  }
 }
 
 export default function Profile({ user }) {

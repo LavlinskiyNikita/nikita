@@ -1,8 +1,7 @@
 import Head from 'next/head'
-
 import PostBlog from "../component/post/post_blog"
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(`${process.env.API__HOST}/post`);
   const post = await res.json();
 

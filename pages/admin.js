@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-Head
 
 export default function Admin() {
   return (

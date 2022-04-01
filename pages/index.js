@@ -6,7 +6,7 @@ export async function getStaticProps(context) {
   const data = await response.json();
 
   if ( !data ) {
-    return {
+    return {  
       notFound: true,
     }
   }
