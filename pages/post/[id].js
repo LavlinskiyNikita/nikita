@@ -28,7 +28,7 @@ export default function CardPost({ content }) {
 
       <div className="page-post">
         <div className="page-post__photo">
-          <img width={600} src={url} alt={title} />
+          <img src={url} alt={title} />
         </div>
         <div className="page-post__derection">
           <h1 className="page-post__title">{title}</h1> 
