@@ -1,5 +1,25 @@
+.come-back {
+  position: relative;
+  font-size: 14px;
+  margin-left: 20px;
+  font-family: 'Solway', serif;
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    left: -24px;
+    top: -3px;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url("../../public/arrow-left.svg");
+  }
+}
+
 .page-post {
   display: flex;
+  margin-top: 50px;
 }
 
 .page-post__photo {
@@ -21,6 +41,10 @@
 
 .page-post__descr {
   font-size: 24px;
+}
+
+.error-site {
+  color: rgb(228, 84, 84);
 }
 
 @media (max-width: 1000px) {

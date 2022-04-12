@@ -2,7 +2,6 @@ import Link from 'next/link'
 import React, { useState, useEffect } from 'react';
 import Menu from './menu'
 
-
 export default function AsideBar() {
   const [clickMenu, setClickMenu] = React.useState(false)
 

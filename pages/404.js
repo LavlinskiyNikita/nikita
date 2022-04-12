@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Error() {
   return (
@@ -10,6 +11,7 @@ export default function Error() {
         <h1 className="error__text">
           404
         </h1>
+        <Link href="/"><a> home </a></Link>
       </div>
     </>
   )
