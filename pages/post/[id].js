@@ -43,7 +43,7 @@ export default function CardPost({contnent}) {
           <div className="linkSite">
             <span>site: </span> 
             {
-              LinkSite ? <a className="LinkSite" href={`${LinkSite}`} target='_blank'>site</a> : <span className="error-site">Site hosting links not found</span>
+              LinkSite ? <a className="LinkSite" href={`${LinkSite}`} target="_blank" rel="noopener noreferrer">site</a> : <span className="error-site">Site hosting links not found</span>
             }
             {/* <a className="LinkSite" href={`${LinkSite}`} target='_blank'>site</a> */}
           </div>
