@@ -3,6 +3,9 @@ import Link from 'next/link'
 import { useState } from "react/cjs/react.development";
 import { useEffect } from "react/cjs/react.production.min";
 
+import { useRouter } from 'next/router'
+
+
 export async function getServerSideProps(context) {
   const { id } = context.params;
   console.log(id)
@@ -22,7 +25,9 @@ export async function getServerSideProps(context) {
 
 export default function CardPost({contnent}) {
 
-  const {title, url, LinkSite} = contnent || {}
+  const router = useRouter()
+
+  const {title, url, LinkSite, descr} = contnent || {}
 
   return (
     <>
@@ -30,9 +35,8 @@ export default function CardPost({contnent}) {
         <title>{`${title} | NIKITA.com`}</title>
       </Head>
 
-      <Link href="/">
-          <a className="come-back">come back</a>
-      </Link>
+      <a   onClick={()=> router.back()} className="come-back">come back</a>
+
       <div className="page-post">
         <div className="page-post__photo">
           <img src={url} alt={title} />

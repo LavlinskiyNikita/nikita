@@ -1,0 +1,78 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0000001f;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__content {
+  box-sizing: border-box;
+  padding: 40px;
+  width: 50vw;
+  background: white;
+}
+
+.modal__input {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__input-text {
+  border: 0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.modal__input-file {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.modal__label {
+  cursor: pointer;
+  display: block;
+  padding: 20px;
+  background: rgb(0, 0, 0); 
+
+  span {
+    color: #c5c5c5;
+  }
+}
+
+input[type=file] {
+  display: none;
+}
+
+.modal__btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__button {
+  cursor: pointer;
+  padding: 20px 0;
+  border: 0;
+  width: 48%;
+}
+
+.modal__button--cancel {
+  background: rgb(206, 206, 206);
+}
+.modal__button--add {
+  background: rgb(0, 0, 0);
+  color: white;
+}

@@ -48,9 +48,7 @@ export default function Home({contents}) {
   return (
     <>
       <Head>
-        <title>
-          post main page |  NIKITA.com
-        </title>
+        <title>post main page |  NIKITA.com</title>
       </Head>
 
     <div className="cardBlock">

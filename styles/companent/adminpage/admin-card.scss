@@ -1,0 +1,49 @@
+.admin-card {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 18px;
+  height: 225px;
+}
+
+.admin-card__diraction {
+  display: flex;
+}
+
+.admin-card__image {
+  height: 100%;
+  margin-right: 12px;
+}
+
+.admin-card__text {
+  padding: 10px 0;
+}
+
+.admin-card__title {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+.admin-card__descr {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.admin-card__manage {
+  display: flex;
+}
+
+.admin-card__btn {
+  margin: 0 10px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+}

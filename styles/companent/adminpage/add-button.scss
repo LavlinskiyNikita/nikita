@@ -1,0 +1,14 @@
+.add-button {
+  cursor: pointer;
+  border: 0;
+  padding: 23px 41px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Solway';
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #575757;
+  }
+}

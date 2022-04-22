@@ -1,0 +1,28 @@
+.panel-top {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #FAFAFA;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.panel-top__item {
+  font-family: 'Solway';
+  padding: 20px 41px;
+  transition: background-color 2s ease;
+}
+.panel-top__item--current {
+  font-family: 'Solway';
+  padding: 20px 41px;
+  background-color: #E8E8E8;
+  transition: background-color 2s ease-in;
+}
+
+.panel-top__link {
+  font-weight: 400;
+  font-family: 'Solway';
+  padding: 20px 41px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
