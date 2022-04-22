@@ -3,7 +3,7 @@ import AdminCard from "../../component/admin/adminCard"
 import ATopPanel from "../../component/admin/aTopPanel"
 import Modal from "../../component/modal"
 
-export default function bBlog() {
+export default function Blog() {
   const [modalActive, setModalAcrtive] = useState(false)
 
   return (

@@ -6,7 +6,7 @@ export default function modal({activeM, sActive, children}) {
           {children}
           <div className="modal__btn">
             <button className="modal__button modal__button--cancel" onClick={() => sActive(false)}>отмена</button>
-            <button className="modal__button modal__button--add" type="submit">создавть</button>
+            <button className="modal__button modal__button--add" type="submit">создать</button>
           </div>
         </form>
       </div>

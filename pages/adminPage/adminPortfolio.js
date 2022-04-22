@@ -3,8 +3,8 @@ import AdminCard from "../../component/admin/adminCard"
 import ATopPanel from "../../component/admin/aTopPanel"
 import Modal from "../../component/modal"
 
-export default function adminPortPage() {
-
+export default function AdminPortPage() {
+  
   const [modalActive, setModalAcrtive] = useState(false)
 
   return(
